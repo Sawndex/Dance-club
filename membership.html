@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership | APU Dance Club</title>
+  <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">APU Dance Club</a>
+    </div>
+    <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primary-nav">
+      <div class="nav-pill">
+        <ul class="nav-main">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="showcase.html">Dance Showcase</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-others">
+          <button type="button" class="nav-others-toggle has-current" id="nav-others-toggle" aria-expanded="false" aria-controls="nav-others-menu">
+            Others <span class="others-arrow" aria-hidden="true"></span>
+          </button>
+          <ul id="nav-others-menu" class="nav-others-menu" role="menu">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="membership.html" aria-current="page">Membership</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="page-into">
+      <h1>Become a Member</h1>
+      <p>Open to all APU students. Join us to discover the joy of dance, learn new styles, and meet amazing people.</p>
+    </section>
+
+    <section id="benefits">
+      <h2>Member Benefits</h2>
+      <ul>
+        <li>Free access to all workshops and events.</li>
+        <li>Discounts on dance shoes and attire from our partners.</li>
+        <li>Opportunity to perform at campus events.</li>
+        <li>Voting rights at the Annual General Meeting.</li>
+      </ul>
+    </section>
+
+    <section id="fees">
+      <h2>Membership Fee</h2>
+      <p>RM 20 per academic year – covers workshop materials and event costs.</p>
+    </section>
+
+    <section id="membership-form">
+      <h2>Sign Up</h2>
+      <form id="membership-form" method="post">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" name="full-name" required>
+
+        <label for="student-id">Student ID</label>
+        <input type="text" id="student-id" name="student-id" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <fieldset>
+          <legend>Dance Styles of Interest</legend>
+          <label><input type="checkbox" name="interest" value="salsa"> Salsa</label>
+          <label><input type="checkbox" name="interest" value="bachata"> Bachata</label>
+          <label><input type="checkbox" name="interest" value="hiphop"> Hip-Hop</label>
+          <label><input type="checkbox" name="interest" value="contemporary"> Contemporary</label>
+          <label><input type="checkbox" name="interest" value="ballroom"> Ballroom</label>
+          <label><input type="checkbox" name="interest" value="kpop"> K-Pop</label>
+          <label><input type="checkbox" name="interest" value="cultural"> Cultural Dance</label>
+        </fieldset>
+
+        <label for="experience">Dance Experience Level</label>
+        <select id="experience" name="experience">
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+
+        <button type="submit">Submit Application</button>
+        <div id="membership-feedback" class="form-message"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 APU Dance Club. All rights reserved.</p>
+    <p>Follow us: <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">WhatsApp Group</a></p>
+  </footer>
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="js/script.js"></script>
+  <script src="js/theme.js"></script>
+</body>
+</html>
