@@ -1,0 +1,113 @@
+/* ==========================================================================
+   APU DANCE CLUB — theme.css
+   Adds Light / Dark theme overrides on top of the existing "Current Theme"
+   (which is simply the default :root in style.css — untouched).
+
+   Load this AFTER style.css in every <head>.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* -------------------------------------------------------------------------
+   LIGHT THEME
+   ------------------------------------------------------------------------- */
+html[data-theme="light"] {
+  color-scheme: light;
+  --midnight:       #ffffff;
+  --midnight-soft:  #f3f0fa;
+  --midnight-card:  #ffffff;
+  --grape:          #7b1fa2;
+  --hot-pink:       #d61a7c;
+  --hot-pink-dim:   #b5115f;
+  --cyan:           #0090a8;
+  --sunset-orange:  #d9670f;
+  --foam:           #14101f;   /* dark text for contrast on light bg */
+  --foam-dim:       #4a4358;
+  --line:           rgba(20, 16, 31, 0.12);
+
+  --gradient-sunset: linear-gradient(120deg, var(--hot-pink) 0%, var(--sunset-orange) 55%, #f2b705 100%);
+  --gradient-neon:   linear-gradient(120deg, var(--cyan) 0%, var(--hot-pink) 100%);
+  --gradient-bg:     radial-gradient(ellipse at top, #f7eefc 0%, var(--midnight) 55%);
+
+  --shadow-glow-pink: 0 0 18px rgba(214, 26, 124, 0.25);
+  --shadow-glow-cyan: 0 0 18px rgba(0, 144, 168, 0.20);
+}
+
+/* GTA-style pause menu look for Light theme headings — dark, bold, high contrast */
+html[data-theme="light"] h1,
+html[data-theme="light"] h2,
+html[data-theme="light"] h3,
+html[data-theme="light"] .logo a,
+html[data-theme="light"] .nav-main a {
+  font-family: 'Anton', var(--font-display);
+  color: #14101f;
+  letter-spacing: 0.04em;
+}
+
+/* -------------------------------------------------------------------------
+   DARK THEME (standard dark mode — distinct from the neon "Current" look)
+   ------------------------------------------------------------------------- */
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --midnight:       #0b0b0f;
+  --midnight-soft:  #121218;
+  --midnight-card:  #17171f;
+  --grape:          #5b3a7d;
+  --hot-pink:       #e0479e;
+  --hot-pink-dim:   #b23a7f;
+  --cyan:           #3fc7d6;
+  --sunset-orange:  #e08a4d;
+  --foam:           #eceef2;
+  --foam-dim:       #9a9ba5;
+  --line:           rgba(255, 255, 255, 0.08);
+
+  --gradient-sunset: linear-gradient(120deg, var(--hot-pink) 0%, var(--sunset-orange) 55%, #d9b23f 100%);
+  --gradient-neon:   linear-gradient(120deg, var(--cyan) 0%, var(--hot-pink) 100%);
+  --gradient-bg:     radial-gradient(ellipse at top, #1a1a22 0%, var(--midnight) 55%);
+
+  --shadow-glow-pink: 0 0 16px rgba(224, 71, 158, 0.25);
+  --shadow-glow-cyan: 0 0 16px rgba(63, 199, 214, 0.20);
+}
+
+/* -------------------------------------------------------------------------
+   Theme section inside the "Others" dropdown (injected by theme.js)
+   ------------------------------------------------------------------------- */
+.theme-menu-item {
+  padding: 0.6em 1em 0.8em;
+  border-top: 1px solid var(--line);
+  margin-top: 0.4em;
+}
+.theme-menu-label {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--foam-dim);
+  margin-bottom: 0.5em;
+}
+.theme-option-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+}
+.theme-option {
+  padding: 0.35em 0.8em;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--midnight-card);
+  color: var(--foam);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.theme-option:hover,
+.theme-option:focus-visible {
+  border-color: var(--cyan);
+}
+.theme-option.active {
+  background: var(--gradient-neon);
+  color: #0b0b0f;
+  border-color: transparent;
+}

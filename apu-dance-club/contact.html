@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | APU Dance Club</title>
+  <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">APU Dance Club</a>
+    </div>
+    <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primary-nav">
+      <div class="nav-pill">
+        <ul class="nav-main">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="showcase.html">Dance Showcase</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+        <div class="nav-others">
+          <button type="button" class="nav-others-toggle" id="nav-others-toggle" aria-expanded="false" aria-controls="nav-others-menu">
+            Others <span class="others-arrow" aria-hidden="true"></span>
+          </button>
+          <ul id="nav-others-menu" class="nav-others-menu" role="menu">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="page-intro">
+      <h1>Contact Us</h1>
+      <p>Have a question or suggestion? Reach out using the form below or through our social channels.</p>
+    </section>
+
+    <section id="contact-details">
+      <h2>Get In Touch</h2>
+      <address>
+        <p>APU Dance Club</p>
+        <p>Student Activity Centre, Block C, Level 2</p>
+        <p>Email: <a href="mailto:apudanceclub@apu.edu.my">apudanceclub@apu.edu.my</a></p>
+        <p>WhatsApp: +60 12-345 6789</p>
+      </address>
+    </section>
+
+    <section id="contact-form">
+      <h2>Send Us a Message</h2>
+      <form id="contact-form" method="post">
+        <label for="contact-name">Name</label>
+        <input type="text" id="contact-name" name="contact-name" required>
+
+        <label for="contact-email">Email Address</label>
+        <input type="email" id="contact-email" name="contact-email" required>
+
+        <label for="contact-subject">Subject</label>
+        <input type="text" id="contact-subject" name="contact-subject" required>
+
+        <label for="contact-message">Message</label>
+        <textarea id="contact-message" name="contact-message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+        <div id="contact-feedback" class="form-message"></div>
+      </form>
+    </section>
+
+    <section id="map">
+      <h2>Find Us</h2>
+      <div class="map-placeholder">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.488756847408!2d83.99510937542935!3d28.222841302567403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399594365cfa00c1%3A0x55d3cdde5726308!2sInfomax%20College%20of%20Information%20Technology%20and%20Management!5e0!3m2!1sen!2snp!4v1781853991190!5m2!1sen!2snp" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 APU Dance Club. All rights reserved.</p>
+    <p>Follow us: <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">WhatsApp Group</a></p>
+  </footer>
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="js/script.js"></script>
+  <script src="js/theme.js"></script>
+</body>
+</html>

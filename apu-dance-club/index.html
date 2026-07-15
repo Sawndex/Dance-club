@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | APU Dance Club</title>
+  <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">APU Dance Club</a>
+    </div>
+    <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primary-nav">
+      <div class="nav-pill">
+        <ul class="nav-main">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="showcase.html">Dance Showcase</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-others">
+          <button type="button" class="nav-others-toggle" id="nav-others-toggle" aria-expanded="false" aria-controls="nav-others-menu">
+            Others <span class="others-arrow" aria-hidden="true"></span>
+          </button>
+          <ul id="nav-others-menu" class="nav-others-menu" role="menu">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="hero">
+      <div id="hero-slider" class="hero-slider" aria-label="Hero image slideshow">
+        <div class="hero-slide active" style="background-image: url('images/hero-bg.jpeg');">
+          <div class="hero-slide-content">
+            <h1>Move, Connect, Express</h1>
+            <p>APU Dance Club is the university's home for dancers of all styles and skill levels. Join us for workshops, social dances, and a community that moves together.</p>
+            <a href="membership.html" class="btn">Join the Club</a>
+          </div>
+        </div>
+        <div class="hero-slide" style="background-image: url('images/hero-bg1.jpeg');">
+          <div class="hero-slide-content">
+            <h1>From Ballroom to Hip-Hop</h1>
+            <p>Explore salsa, contemporary, street dance, and more. There's a rhythm for every soul.</p>
+            <a href="showcase.html" class="btn">Watch Dance Showcase</a>
+          </div>
+        </div>
+        <div class="hero-slide" style="background-image: url('images/hero-bg2.jpeg');">
+          <div class="hero-slide-content">
+            <h1>Nights of Rhythm</h1>
+            <p>Social dance nights, performances, and workshops – our floor is your stage. Come dance with us!</p>
+            <a href="events.html" class="btn">See Upcoming Events</a>
+          </div>
+        </div>
+        <button type="button" class="slider-btn slider-prev" aria-label="Previous slide">&#8249;</button>
+        <button type="button" class="slider-btn slider-next" aria-label="Next slide">&#8250;</button>
+        <div class="slider-dots" role="tablist" aria-label="Slide indicators">
+          <button type="button" class="slider-dot active" role="tab" aria-selected="true" aria-label="Slide 1"></button>
+          <button type="button" class="slider-dot" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+          <button type="button" class="slider-dot" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="moments-marquee" class="marquee" aria-label="Scrolling photo highlights">
+      <div class="marquee-track">
+        <img src="images/dance-1.jpeg" alt="Members dancing salsa">
+        <img src="images/dance-2.jpeg" alt="Hip-hop workshop">
+        <img src="images/dance-3.jpeg" alt="Social dance night">
+        <img src="images/dance-4.jpeg" alt="Salsa performance">
+        <img src="images/dance-5.jpeg" alt="Contemporary dance piece">
+        <img src="images/dance-6.jpeg" alt="Hip-hop crew">
+        <!-- duplicated for a seamless infinite loop -->
+        <img src="images/dance-1.jpeg" alt="" aria-hidden="true">
+        <img src="images/dance-2.jpeg" alt="" aria-hidden="true">
+        <img src="images/dance-3.jpeg" alt="" aria-hidden="true">
+        <img src="images/dance-4.jpeg" alt="" aria-hidden="true">
+        <img src="images/dance-5.jpeg" alt="" aria-hidden="true">
+        <img src="images/dance-6.jpeg" alt="" aria-hidden="true">
+      </div>
+    </section>
+
+    <section id="about-preview">
+      <h2>Who We Are</h2>
+      <p>Founded by a group of passionate dancers, APU Dance Club brings together students from all backgrounds to explore movement and rhythm. We organise weekly workshops, social dance nights, and performances to build skills and friendships.</p>
+      <a href="about.html">Learn more about us &rarr;</a>
+    </section>
+
+    <section id="events-preview">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>
+          <h3>Salsa Dance Workshop</h3>
+          <p>Saturday, 27 June 2026 | 10:00 AM</p>
+        </li>
+        <li>
+          <h3>Social Dance Night</h3>
+          <p>Friday, 3 July 2026 | 7:00 PM</p>
+        </li>
+        <li>
+          <h3>Contemporary Dance Class</h3>
+          <p>Sunday, 12 July 2026 | 2:00 PM</p>
+        </li>
+      </ul>
+      <a href="events.html">See all events &rarr;</a>
+    </section>
+
+    <section id="gallery-preview">
+      <h2>Moments from the Dance Floor</h2>
+      <div class="image-grid">
+        <img src="images/dance-1.jpeg" alt="Members dancing salsa">
+        <img src="images/dance-2.jpeg" alt="Hip-hop workshop">
+        <img src="images/dance-3.jpeg" alt="Social dance night">
+      </div>
+      <a href="gallery.html">View full gallery &rarr;</a>
+    </section>
+
+    <section id="testimonial-preview">
+      <h2>What Our Members Say</h2>
+      <blockquote>
+        <p>"Joining APU Dance Club transformed my university experience. I've discovered a new passion, gained confidence, and found a family that moves together."</p>
+        <cite>— Member, 2nd Year Student</cite>
+      </blockquote>
+      <a href="testimonials.html">Read more stories &rarr;</a>
+    </section>
+
+    <section id="newsletter">
+      <h2>Stay in the Loop</h2>
+      <p>Subscribe to get notified about upcoming workshops and dance events.</p>
+      <form id="newsletter-form" action="#" method="post">
+        <label for="newsletter-email">Email address</label>
+        <input type="email" id="newsletter-email" name="newsletter-email" placeholder="you@example.com" required>
+        <button type="submit">Subscribe</button>
+        <div id="newsletter-feedback" class="form-message"></div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 APU Dance Club. All rights reserved.</p>
+    <p>Follow us: <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">WhatsApp Group</a></p>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/script.js"></script>
+  <script src="js/theme.js"></script>
+</body>
+</html>
